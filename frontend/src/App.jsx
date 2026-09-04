@@ -18,7 +18,7 @@ function App() {
     setLoading(true);
     try {
       const response = await fetch(
-        "http://localhost:5000/api/employees"
+        "https://employee-portal-backend-cs43.onrender.com/api/employees"
       );
 
       const data = await response.json();
@@ -57,7 +57,7 @@ function App() {
 
   try {
     const response = await fetch(
-      "http://localhost:5000/api/employees",
+      "https://employee-portal-backend-cs43.onrender.com/api/employees",
       {
         method: "POST",
         headers: {
@@ -111,7 +111,7 @@ const deleteEmployee = async (id) => {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/employees/${id}`,
+      `https://employee-portal-backend-cs43.onrender.com/api/employees/${id}`,
       {
         method: "DELETE",
       }
@@ -142,7 +142,7 @@ const updateEmployee = async (e) => {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/employees/${editingId}`,
+      `https://employee-portal-backend-cs43.onrender.com/api/employees/${editingId}`,
       {
         method: "PUT",
         headers: {
